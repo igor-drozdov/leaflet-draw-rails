@@ -1,3 +1,6 @@
+[![Build Status](https://api.travis-ci.org/iharthrush/leaflet-draw-rails.svg?branch=master)](https://travis-ci.org/iharthrush/leaflet-draw-rails)
+[![Gem Version](https://badge.fury.io/rb/leaflet-draw-rails.svg)](http://badge.fury.io/rb/leaflet-draw-rails)
+
 https://github.com/Leaflet/Leaflet.draw is vector drawing and editing plugin for Leaflet.
 This gem adds it to your Rails application.
 
