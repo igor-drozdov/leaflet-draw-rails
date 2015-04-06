@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "selenium-webdriver", "~> 2.45"
   s.add_development_dependency "leaflet-rails"
   s.add_development_dependency "rails", ">= 3.0"
+  s.add_development_dependency "cucumber-rails", "~> 1.4.2"
+  s.add_development_dependency "database_cleaner", "~> 1.4.1"
 end
