@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     leaflet-draw-rails (0.0.1)
-      rails (> 3)
 
 GEM
   remote: https://rubygems.org/
@@ -148,6 +147,7 @@ DEPENDENCIES
   capybara (~> 2.4)
   leaflet-draw-rails!
   leaflet-rails
+  rails (>= 3.0)
   rspec-rails (~> 3.2)
   selenium-webdriver (~> 2.45)
   sqlite3
