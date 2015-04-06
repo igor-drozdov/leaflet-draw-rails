@@ -20,4 +20,11 @@ window.addEventListener('load', function() {
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
+
+  var drawnItems = new L.FeatureGroup();
+  drawnItems.addTo(map);
+
+  map.on('draw:created', function(e) {
+    drawnItems.addLayer(e.layer);
+  });
 }, false);
