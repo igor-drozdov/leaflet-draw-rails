@@ -10,3 +10,7 @@ Feature: Draw an element
   Scenario: Draw a polyline
     When I draw a polyline on a map
     Then I should see that a polyline is added to the map
+
+  Scenario: Draw a polygon
+    When I draw a polygon on a map
+    Then I should see that a polygon is added to the map
