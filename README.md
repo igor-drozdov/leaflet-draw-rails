@@ -12,14 +12,18 @@ Add this line to your application's Gemfile:
 gem 'leaflet-draw-rails'
 ```
 
-And then execute:
+And execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+Then require `leaflet.draw` into your `application.js` manifest, which is usually located in `app/assets/javascripts`
+    
+    //= require leaflet.draw
 
-    $ gem install leaflet-draw-rails
+After that, require `leaflet.draw` into your `application.css` manifest, which is usually located in `app/assets/stylesheets`
 
+    *= require leaflet.draw
+    
 ## Development
 
 After checking out the repo, run `bundle` to install dependencies. Then, you might want to run `rake` to make sure the tests are green. The `spec/dummy` folder contains a dummy Rails application, which is tested by the specs in `spec/dummy/spec/` folder (mostly by RSpec features using `capybara` and `selenium-webdriver`).
