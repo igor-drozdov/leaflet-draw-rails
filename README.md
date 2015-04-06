@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Development
 
-After checking out the repo, run `bundle` to install dependencies. Then, run `rspec` to make sure the tests passed.
+After checking out the repo, run `bundle` to install dependencies. Then, you might want to run `rake` to make sure the tests are green. The `spec/dummy` folder contains a dummy Rails application, which is tested by the specs in `spec/dummy/spec/` folder (mostly by RSpec features using `capybara` and `selenium-webdriver`).
 
 ## Contributing
 
