@@ -18,3 +18,7 @@ Feature: Draw an element
   Scenario: Draw a rectangle
     When I draw a rectangle on a map
     Then I should see that a rectangle is added to the map
+
+  Scenario: Draw a circle
+    When I draw a circle on a map
+    Then I should see that a circle is added to the map
