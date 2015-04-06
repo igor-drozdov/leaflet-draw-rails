@@ -1,4 +1,11 @@
 require "leaflet-draw-rails/version"
+require "leaflet-draw-rails/testing"
+
+if defined? RSpec
+  RSpec.configure do |spec|
+    spec.include Leaflet::Draw::Rails::Testing
+  end
+end
 
 module Leaflet
   module Draw
