@@ -7,6 +7,10 @@ if defined? RSpec
   end
 end
 
+if respond_to? :World
+  World Leaflet::Draw::Rails::Testing
+end
+
 module Leaflet
   module Draw
     module Rails
