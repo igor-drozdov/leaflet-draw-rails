@@ -14,3 +14,7 @@ Feature: Draw an element
   Scenario: Draw a polygon
     When I draw a polygon on a map
     Then I should see that a polygon is added to the map
+
+  Scenario: Draw a rectangle
+    When I draw a rectangle on a map
+    Then I should see that a rectangle is added to the map
