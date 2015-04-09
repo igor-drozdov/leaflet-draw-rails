@@ -26,7 +26,21 @@ After that, require `leaflet.draw` into your `application.css` manifest, which i
     
 ## Development
 
-After checking out the repo, run `bundle` to install dependencies. Then, you might want to run `rake` to make sure the tests are green. The `spec/dummy` folder contains a dummy Rails application, which is tested by the specs in `spec/dummy/spec/` folder (mostly by RSpec features using `capybara` and `selenium-webdriver`).
+After checking out the repo, run `bundle` to install dependencies. Then, you might want to run `rake` to make sure the tests are green. The `spec/dummy` folder contains a dummy Rails application, which is tested by the specs in `spec/dummy/spec/` folder (mostly by RSpec and Cucumber features using `capybara` and `selenium-webdriver`).
+
+## Test Helpers
+
+To alleviate testing problems, there are helper methods accessible in RSpec or Cucumber features. `capybara` and `selenium-webdriver` are required.
+
+```ruby
+leaflet_draw_marker([ 200, 200 ]).on find('#map')
+leaflet_draw_polyline([ [ 200, 200 ], [ 300, 300 ] ]).on find('#map')
+leaflet_draw_polygon([ [ 200, 200 ], [ 300, 300 ], [ 300, 200 ] ]).on find('#map')
+leaflet_draw_rectangle([ [ 200, 200 ], [ 300, 300 ] ]).on find('#map')
+leaflet_draw_circle([ [ 200, 200 ], [ 300, 300 ] ]).on find('#map')
+```
+
+Examples can be found in the `features` and `spec/dummy/spec/features` folders.
 
 ## Contributing
 
